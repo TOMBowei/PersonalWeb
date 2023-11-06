@@ -1,6 +1,8 @@
 package com.PersonalWeb.entity;
 
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -23,6 +25,7 @@ public class ArticleTagList implements Serializable {
     /**
      * 文章对应标签id
      */
+    @TableId(value = "article_tag_list_id")
     private String articleTagListId;
 
     /**

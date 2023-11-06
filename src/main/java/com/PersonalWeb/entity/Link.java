@@ -2,6 +2,8 @@ package com.PersonalWeb.entity;
 
 import java.time.LocalDateTime;
 import java.io.Serializable;
+
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -24,6 +26,7 @@ public class Link implements Serializable {
     /**
      * 友情链接id
      */
+    @TableId(value = "link_id")
     private String linkId;
 
     /**
