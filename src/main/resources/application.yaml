@@ -10,7 +10,7 @@ spring:
   thymeleaf:
     cache: false
   datasource:
-    url: jdbc:mysql://localhost:3306/PersonalWeb?useUnicode=true&amp;characterEncodeing=UTF-8&amp;useSSL=false&amp;serverTimezone=GMT?autoReconnect=true&amp;failOverReadOnly=false
+    url: jdbc:mysql://localhost:3306/PersonalWeb?useSSL=false&autoReconnect=true&useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
     username: root
     password: Wubowei318
     type: com.alibaba.druid.pool.DruidDataSource
